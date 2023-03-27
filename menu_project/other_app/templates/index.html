@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Tree menu{% endblock %}
+
+{% block heading %}<p>Test page for menu examples.</p>{% endblock %}
+
+
+{% block content %}
+    Menu 'main_menu':
+    {% load menu_tags %}
+    {% draw_menu 'main_menu' %}
+
+    <p> Second menu 'second': </p>
+    {% draw_menu 'second' %}
+{% endblock %}

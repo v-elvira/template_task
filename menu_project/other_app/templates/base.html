@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      ul li span.active {
+         font-weight: bold;
+      }
+        ul li.has_children {
+        list-style-type: "+"; /* Set the list marker to the plus symbol for li elements with class "has_children" */
+      }
+    </style>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>{% block heading %}{% endblock %}</h1>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
